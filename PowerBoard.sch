@@ -9912,18 +9912,18 @@ Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
 <part name="VCC1" library="supply1" deviceset="VCCINT" device=""/>
 <part name="VCC2" library="supply1" deviceset="VCCINT" device=""/>
 <part name="P+4" library="supply1" deviceset="+12V" device=""/>
-<part name="R17" library="rcl" deviceset="R-EU_" device="R0603"/>
-<part name="R18" library="rcl" deviceset="R-EU_" device="R0603"/>
+<part name="R17" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
+<part name="R18" library="rcl" deviceset="R-EU_" device="R0603" value="20k"/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
-<part name="R19" library="rcl" deviceset="R-EU_" device="R0603"/>
-<part name="R20" library="rcl" deviceset="R-EU_" device="R0603"/>
+<part name="R19" library="rcl" deviceset="R-EU_" device="R0603" value="20k"/>
+<part name="R20" library="rcl" deviceset="R-EU_" device="R0603" value="20k"/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
-<part name="D5" library="diode" deviceset="BAT54" device=""/>
+<part name="D5" library="diode" deviceset="BAT54" device="" value="BAT54*"/>
 <part name="R21" library="rcl" deviceset="R-EU_" device="R0603" value="0*"/>
-<part name="R22" library="rcl" deviceset="R-EU_" device="R0603" value="100"/>
-<part name="C19" library="rcl" deviceset="C-EU" device="C0603" value="100p"/>
-<part name="R23" library="rcl" deviceset="R-EU_" device="R0603" value="0*"/>
-<part name="D6" library="diode" deviceset="BAT54" device=""/>
+<part name="R22" library="rcl" deviceset="R-EU_" device="R0603" value="100*"/>
+<part name="C19" library="rcl" deviceset="C-EU" device="C0603" value="820p"/>
+<part name="R23" library="rcl" deviceset="R-EU_" device="R0603" value="20k"/>
+<part name="D6" library="diode" deviceset="BAT54" device="" value="BAT54*"/>
 <part name="R24" library="rcl" deviceset="R-EU_" device="R0603" value="100"/>
 <part name="R25" library="rcl" deviceset="R-EU_" device="R0402" value="0"/>
 <part name="R26" library="rcl" deviceset="R-EU_" device="R0402" value="0"/>
@@ -9934,7 +9934,7 @@ Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
 <part name="R31" library="rcl" deviceset="R-EU_" device="R0402" value="0*"/>
 <part name="R32" library="rcl" deviceset="R-EU_" device="R0402" value="0"/>
 <part name="VCC3" library="supply1" deviceset="VCCINT" device=""/>
-<part name="R33" library="rcl" deviceset="R-EU_" device="R0603" value="0*"/>
+<part name="R33" library="rcl" deviceset="R-EU_" device="R0603" value="100"/>
 <part name="JP2" library="pinhead" deviceset="PINHD-2X5" device=""/>
 <part name="X1" library="con-wago" deviceset="233-102" device=""/>
 <part name="P+10" library="supply1" deviceset="+12V" device=""/>
@@ -9959,6 +9959,14 @@ Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
 <part name="R38" library="rcl" deviceset="R-EU_" device="R0603" value="0"/>
 <part name="IC3" library="1wire" deviceset="DS2431" device="P"/>
 <part name="GND34" library="supply1" deviceset="GND" device=""/>
+<part name="R39" library="rcl" deviceset="R-EU_" device="R0603" value="20k"/>
+<part name="GND35" library="supply1" deviceset="GND" device=""/>
+<part name="C20" library="rcl" deviceset="C-EU" device="C0603" value="10n"/>
+<part name="C21" library="rcl" deviceset="C-EU" device="C0603" value="10n"/>
+<part name="GND36" library="supply1" deviceset="GND" device=""/>
+<part name="GND37" library="supply1" deviceset="GND" device=""/>
+<part name="C22" library="rcl" deviceset="C-EU" device="C0603" value="10n"/>
+<part name="GND38" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9976,6 +9984,7 @@ Reichelt: AKKU IPD 3G</text>
 immer gelten
 V+ &lt; +3V3</text>
 <text x="124.46" y="81.28" size="1.778" layer="97">ISET2 = low =&gt; Iout(max) = Iset</text>
+<text x="48.26" y="114.3" size="1.778" layer="97">Vref=2,56V</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="27.94" y="71.12"/>
@@ -10136,6 +10145,14 @@ V+ &lt; +3V3</text>
 <instance part="IC3" gate="P" x="248.92" y="116.84"/>
 <instance part="IC3" gate="_1W" x="243.84" y="116.84"/>
 <instance part="GND34" gate="1" x="248.92" y="106.68"/>
+<instance part="R39" gate="G$1" x="121.92" y="119.38" rot="R90"/>
+<instance part="GND35" gate="1" x="121.92" y="111.76"/>
+<instance part="C20" gate="G$1" x="157.48" y="91.44" rot="R180"/>
+<instance part="C21" gate="G$1" x="134.62" y="119.38" rot="R180"/>
+<instance part="GND36" gate="1" x="134.62" y="114.3"/>
+<instance part="GND37" gate="1" x="157.48" y="86.36"/>
+<instance part="C22" gate="G$1" x="185.42" y="116.84" rot="R180"/>
+<instance part="GND38" gate="1" x="185.42" y="111.76"/>
 </instances>
 <busses>
 </busses>
@@ -10441,6 +10458,22 @@ V+ &lt; +3V3</text>
 <segment>
 <pinref part="IC3" gate="P" pin="GND"/>
 <pinref part="GND34" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R39" gate="G$1" pin="1"/>
+<pinref part="GND35" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C21" gate="G$1" pin="1"/>
+<pinref part="GND36" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C20" gate="G$1" pin="1"/>
+<pinref part="GND37" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C22" gate="G$1" pin="1"/>
+<pinref part="GND38" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -10759,6 +10792,8 @@ V+ &lt; +3V3</text>
 <wire x1="177.8" y1="121.92" x2="170.18" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="121.92" x2="170.18" y2="142.24" width="0.1524" layer="91"/>
 <junction x="177.8" y="121.92"/>
+<pinref part="C22" gate="G$1" pin="2"/>
+<wire x1="185.42" y1="121.92" x2="177.8" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R27" gate="G$1" pin="2"/>
@@ -10781,18 +10816,20 @@ V+ &lt; +3V3</text>
 <pinref part="R35" gate="G$1" pin="1"/>
 <wire x1="157.48" y1="142.24" x2="157.48" y2="121.92" width="0.1524" layer="91"/>
 <junction x="157.48" y="121.92"/>
+<pinref part="C20" gate="G$1" pin="2"/>
+<wire x1="157.48" y1="96.52" x2="157.48" y2="101.6" width="0.1524" layer="91"/>
+<junction x="157.48" y="101.6"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="D5" gate="G$1" pin="C"/>
-<wire x1="139.7" y1="127" x2="139.7" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="121.92" x2="147.32" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="127" x2="139.7" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="124.46" x2="147.32" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="R22" gate="G$1" pin="2"/>
-<wire x1="147.32" y1="119.38" x2="147.32" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="119.38" x2="147.32" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="147.32" y1="121.92" x2="147.32" y2="124.46" width="0.1524" layer="91"/>
-<junction x="147.32" y="121.92"/>
+<junction x="147.32" y="124.46"/>
 </segment>
 </net>
 <net name="I_POS" class="0">
@@ -10834,12 +10871,15 @@ V+ &lt; +3V3</text>
 <segment>
 <pinref part="R24" gate="G$1" pin="2"/>
 <pinref part="R23" gate="G$1" pin="1"/>
-<wire x1="129.54" y1="119.38" x2="129.54" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="121.92" x2="129.54" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="121.92" x2="121.92" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="119.38" x2="129.54" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="124.46" x2="121.92" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="D6" gate="G$1" pin="C"/>
-<wire x1="121.92" y1="121.92" x2="121.92" y2="127" width="0.1524" layer="91"/>
-<junction x="129.54" y="121.92"/>
+<wire x1="121.92" y1="124.46" x2="121.92" y2="127" width="0.1524" layer="91"/>
+<junction x="129.54" y="124.46"/>
+<pinref part="R39" gate="G$1" pin="2"/>
+<junction x="121.92" y="124.46"/>
+<pinref part="C21" gate="G$1" pin="2"/>
+<wire x1="134.62" y1="124.46" x2="129.54" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AVR_RST" class="0">
