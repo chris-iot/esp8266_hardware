@@ -8869,7 +8869,7 @@ Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
 <part name="R10" library="rcl" deviceset="R-EU_" device="R0402" value="100"/>
 <part name="R11" library="rcl" deviceset="R-EU_" device="R0402" value="10k"/>
 <part name="R12" library="rcl" deviceset="R-EU_" device="R0402" value="10k"/>
-<part name="R13" library="rcl" deviceset="R-EU_" device="R0402" value="4k7"/>
+<part name="R13" library="rcl" deviceset="R-EU_" device="R0402" value="1k"/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
